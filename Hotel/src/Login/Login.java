@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ Author: Raj Choksi
+ Course: IST 402 Spring 2017 Project
+ Purpose: This JFrame serves as a login page for a Hotel booking system. 
  */
 package Login;
 //imports
@@ -10,10 +10,6 @@ import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import Login.Booking;
 
-/**
- *
- * @author Raj
- */
 public class Login extends javax.swing.JFrame {
 
     /**
@@ -152,19 +148,19 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+//Handles Exit button action
     private void jbtnexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnexitActionPerformed
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jbtnexitActionPerformed
-
+//Handles reset button action
     private void jbtnresetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnresetActionPerformed
         // TODO add your handling code here:
         jtxtUserName.setText(null);
         jPassword.setText(null);
         
     }//GEN-LAST:event_jbtnresetActionPerformed
-
+//Handles login button action. IF login credentials match (user: admin pass: admin) kicks user to Booking
     private void jbtnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnloginActionPerformed
         // TODO add your handling code here:
         String password = jPassword.getText();

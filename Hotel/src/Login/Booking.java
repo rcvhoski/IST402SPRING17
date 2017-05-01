@@ -1,17 +1,14 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Author: Raj Choksi
+Course: IST 402 Spring 2017 Project
+Purpose: This JFrame serves as a Hotel booking system. It Allows the user to input guest information into a table. 
  */
 package Login;
-
+//imports
 import javax.swing.JOptionPane;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-/**
- *
- * @author Raj
- */
+
 public class Booking extends javax.swing.JFrame {
 
     /**
@@ -412,6 +409,7 @@ public class Booking extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+//Handles Exit button action
 private JFrame frame;
     private void jButtonExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExitActionPerformed
         // TODO add your handling code here:
@@ -420,7 +418,7 @@ private JFrame frame;
             System.exit(0);
         }
     }//GEN-LAST:event_jButtonExitActionPerformed
-
+//Handles Reset Button Action
     private void jButtonResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonResetActionPerformed
         // TODO add your handling code here:
         DefaultTableModel model = (DefaultTableModel) jTableBooking.getModel();
@@ -438,7 +436,7 @@ private JFrame frame;
         jTextName.setText("");
         jTextRoomNumber.setText("");
     }//GEN-LAST:event_jButtonResetActionPerformed
-
+//Handles Clear Button Action
     private void jButtonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonClearActionPerformed
         // TODO add your handling code here:
         jComboDuration.setSelectedItem(false);
@@ -453,7 +451,7 @@ private JFrame frame;
         jTextName.setText("");
         jTextRoomNumber.setText("");
     }//GEN-LAST:event_jButtonClearActionPerformed
-
+//Handles Confirm Button Action
     private void jButtonConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConfirmActionPerformed
         // TODO add your handling code here:
         JOptionPane.showMessageDialog(null, "Booking Confirmed", "Booking",JOptionPane.OK_OPTION);
